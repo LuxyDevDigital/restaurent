@@ -1,0 +1,262 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  --restaurant-dark: #000000;
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  /* remplacé background-color par un dégradé */
+  background: linear-gradient(90deg, #999999 0%, #FFFFFF 100%);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  /* width: 100%;
+  height: 100%; */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  font-weight: 500;
+  color: #000000;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #020202;
+}
+
+/* body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+} */
+
+h1 {
+  color: black;
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #000000;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    /* même dégradé en mode clair (ou ajustez si vous voulez une variante plus douce) */
+    background: linear-gradient(90deg, #717171 0%, #FFFFFF 100%);
+  }
+  a:hover {
+    color: #070707;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+/* HEADER */
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 14px 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(180deg, rgba(0,0,0,0.15), rgba(0,0,0,0.05));
+  backdrop-filter: blur(6px);
+  z-index: 9999;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.header.hidden {
+  transform: translateY(-120%);
+  opacity: 0;
+}
+
+.logo-container {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+
+
+/* LOGO */
+.logo-icon {
+  width: 140px;
+  height: 140px;
+}
+.logo-icon img {
+  width: 160%;
+  height: 160%;
+  object-fit: contain;
+}
+
+/* Responsive logo sizes */
+@media (max-width: 768px) {
+  .logo-icon {
+    width: 100px;
+    height: 100px;
+    margin-right: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo-icon {
+    width: 80px;
+    height: 80px;
+    margin-right: 8px;
+  }
+}
+
+/* HAMBURGER (HIDDEN ON PC) */
+.hamburger {
+  display: none;
+  background: transparent;
+  border: none;
+  color: white;
+}
+
+/* MOBILE MENU DEFAULT */
+.mobile-menu {
+  display: none;
+}
+
+.logo-text {
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+
+.logo-title {
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  line-height: 1;
+}
+
+.logo-subtitle {
+  font-size: 10px;
+  font-weight: 300;
+  letter-spacing: 1px;
+  opacity: 0.8;
+}
+
+/* NAV DESKTOP */
+.navigation {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  flex: 2;
+}
+.nav-link {
+  color: white;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+.nav-link.active,
+.nav-link:hover {
+  color: #d4af37;
+} 
+
+/* ICONS */
+.header-icons {
+  display: flex;
+  gap: 20px;
+  flex: 1;
+  justify-content: flex-end;
+}
+
+.reservation-button {
+  background: linear-gradient(90deg, #c49a5b, #f0d9b5);
+  border-radius: 12px;
+  padding: 8px 14px;
+  font-weight: 700;
+}
+
+@media (max-width: 480px) {
+  .reservation-link .reservation-button { padding: 8px 10px; font-size: 14px; border-radius: 10px; }
+
+  /* compact header: hide desktop navigation and icons, show hamburger */
+  .navigation,
+  .header-icons {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  /* COMPACT DROPDOWN MENU */
+  .mobile-menu {
+    position: absolute;
+    top: 70px;
+    right: 16px;
+    width: 220px;
+    background: rgba(15,15,15,0.95);
+    border-radius: 16px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+    opacity: 0;
+    transform: translateY(-10px);
+    visibility: hidden;
+    transition: all 0.25s ease;
+    display: block;
+    padding: 12px 0;
+  }
+
+  .mobile-menu.open {
+    opacity: 1;
+    transform: translateY(0);
+    visibility: visible;
+  }
+
+  .mobile-nav {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .mobile-link {
+    color: white;
+    padding: 10px 16px;
+    font-size: 14px;
+    font-weight: 600;
+  }
+
+  .mobile-link:hover {
+    color: #d4af37;
+    background: rgba(255,255,255,0.05);
+  }
+}

@@ -1,0 +1,300 @@
+.why-choose-us-section {
+  padding: 40px 0;
+  position: relative;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.section-title {
+  font-family: "Dancing Script", cursive;
+  font-size: 3.5rem;
+  color: #0f0f0f;
+  text-align: center;
+  margin-bottom: 60px;
+  font-weight: 600;
+  position: relative;
+}
+
+.section-title::before {
+  content: "";
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 2px;
+  background: #d4af37;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 40px;
+  margin-bottom: 80px;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+/* Scroller (hidden by default, enabled only on small screens) */
+.icon-scroller {
+  display: none; /* shown in phone breakpoint only */
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 40px;
+  --scroll-duration: 14s; /* shorter = faster */
+}
+
+.icon-track {
+  display: flex;
+  gap: 28px;
+  align-items: center;
+  animation: icon-scroll var(--scroll-duration) linear infinite;
+  will-change: transform;
+  padding: 8px 0;
+}
+
+.icon-track .feature-item {
+  flex: 0 0 auto;
+  width: 140px;
+  text-align: center;
+}
+
+.icon-scroller:hover .icon-track,
+.icon-scroller:focus-within .icon-track {
+  animation-play-state: paused;
+}
+
+@keyframes icon-scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.feature-item {
+
+  text-align: center;
+  padding: 20px;
+}
+.icon-feature{
+  flex-direction: column;
+  align-items: center;
+}
+
+.feature-icon {
+  color: #000000;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.feature-title {
+  
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #000000;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  line-height: 1.4;
+  margin: 0;
+}
+
+.feedback-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.feedback-title {
+  font-family: "Dancing Script", cursive;
+  font-size: 2.8rem;
+  color: #333;
+  margin-bottom: 30px;
+  font-weight: 600;
+}
+
+.feedback-card {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 36px;
+  border-radius: 20px;
+  border: 2px solid rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(8px);
+  position: relative;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.06);
+  transition: opacity 0.35s ease, transform 0.35s ease;
+}
+
+.feedback-card.fade {
+  opacity: 0.02;
+  transform: translateY(8px);
+}
+
+.feedback-text {
+  font-size: 1.05rem;
+  line-height: 1.75;
+  color: #444;
+  margin-bottom: 32px;
+  font-style: italic;
+  transition: opacity 0.3s ease;
+}
+
+.customer-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.customer-name {
+  font-weight: 600;
+  color: #333;
+  font-size: 1.1rem;
+}
+
+.customer-avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #d4af37;
+  border: 3px solid #ffffff;
+}
+
+.feedback-images {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr; /* grande image + deux petites */
+  grid-template-rows: repeat(2, 1fr);
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto; /* centrer le tout */
+}
+
+.feedback-images img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50px;
+  /* box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); */
+  /* transition: transform 0.3s ease, box-shadow 0.3s ease; */
+}
+
+.feedback-images img:hover {
+  transform: scale(1.03);
+  /* box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25); */
+}
+
+/* Image principale au centre gauche (verticalement) */
+.food-image-1 {
+  grid-row: 1 / span 2;
+  grid-column: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 70%; /* Reduced size */
+  margin: auto; /* Center the image */
+  /* transition: transform 0.35s ease, box-shadow 0.35s ease, opacity 0.35s ease; */
+  /* opacity: 0.7; */
+}
+
+/* Petites images à droite */
+.food-image-2 {
+  grid-row: 1;
+  grid-column: 2;
+  transition: transform 0.35s ease, box-shadow 0.35s ease, opacity 0.35s ease;
+  opacity: 0.7;
+}
+
+.food-image-3 {
+  grid-row: 2;
+  grid-column: 2;
+  transition: transform 0.35s ease, box-shadow 0.35s ease, opacity 0.35s ease;
+  opacity: 0.7;
+}
+
+/* Active image styling */
+.food-image-1.active,
+.food-image-2.active,
+.food-image-3.active {
+  opacity: 1;
+  transform: translateY(-8px) scale(1.02);
+  /* box-shadow: 0 18px 40px rgba(0,0,0,0.25); */
+}
+
+
+
+.pagination-dots {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.4);
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.dot.active {
+  background: #ffffff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 2.5rem;
+  }
+
+  .features-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+
+  .feedback-section {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .feedback-title {
+    font-size: 2.2rem;
+    text-align: center;
+  }
+
+  .feedback-images {
+    height: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  /* hide the grid and show the scrolling track */
+  .features-grid {
+    display: none;
+  }
+
+  .icon-scroller {
+    display: block;
+  }
+
+  .feature-title {
+    font-size: 0.8rem;
+  }
+
+  .icon-track {
+    gap: 16px;
+    --scroll-duration: 16s;
+  }
+
+  .icon-track .feature-item {
+    width: 100px;
+  }
+}

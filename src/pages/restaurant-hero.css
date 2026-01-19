@@ -1,0 +1,361 @@
+.hero-container {
+  position: relative;
+  /* width: 100%; */
+  height: 100vh;
+  background:  url("/assets/background.jpg")
+    center / cover;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+/* Video background */
+.hero-video {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.hero-chef-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform-origin: center;
+  animation: chefPanZoom 14s ease-in-out infinite;
+  filter: brightness(0.88) saturate(1.05);
+  will-change: transform;
+}
+
+/* Static image fallback (uses same pan/zoom animation) */
+.hero-chef-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform-origin: center;
+  animation: chefPanZoom 14s ease-in-out infinite;
+  filter: brightness(0.88) saturate(1.05);
+  will-change: transform;
+}
+
+@keyframes chefPanZoom {
+  0% {
+    transform: scale(1) translateX(0);
+  }
+  50% {
+    transform: scale(1.06) translateX(-3%);
+  }
+  100% {
+    transform: scale(1.02) translateX(0);
+  }
+}
+
+.video-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  pointer-events: none;
+  background: linear-gradient(180deg, rgba(0,0,0,0.12) 0%, rgba(0,0,0,0.45) 100%);
+}
+
+/* small attention animation for logo when video is playing */
+.logo-animate {
+  animation: logoPop 900ms cubic-bezier(.2,.9,.2,1) both;
+}
+
+@keyframes logoPop {
+  0% { transform: scale(1); }
+  35% { transform: scale(1.08); }
+  100% { transform: scale(1); }
+}
+
+/* Hero Content */
+.hero-content {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 5;
+}
+
+.central-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.central-logo-circle {
+  width: 200px;
+  height: 200px;
+  border: 3px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  overflow: hidden; /* empêche le débordement de l'image */
+  box-sizing: border-box;
+}
+
+.central-logo-icon {
+  width: 86%; /* s'adapte à la taille du cercle */
+  height: 86%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.central-logo-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+  pointer-events: none;
+  user-select: none;
+  border-radius: 50%; /* optionnel : arrondir l'image si nécessaire */
+}
+
+.central-logo-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  color: white;
+}
+
+.central-title {
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: 3px;
+  line-height: 1;
+}
+
+.central-divider {
+  width: 60px;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.central-subtitle {
+  font-size: 12px;
+  font-weight: 300;
+  letter-spacing: 2px;
+  opacity: 0.8;
+}
+
+/* Food Images */
+.food-image {
+  position: absolute;
+  z-index: 2;
+  animation: spining 60s linear infinite;
+}
+
+@keyframes spining {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.left-food {
+  left: -30px;
+  bottom: -30px;
+  transform: rotate(-18deg); /* rotation ici */
+}
+
+.right-food {
+  right: -70px;
+  bottom: -90px;
+  transform: rotate(15deg); /* rotation ici */
+}
+
+/* Supprime ces lignes : */
+/*
+.left-food img {
+  transform: rotate(-18deg);
+}
+
+.right-food img {
+  transform: rotate(15deg);
+}
+*/
+
+.food-image img {
+  width: 180px; /* ajuste la taille selon ton besoin */
+  height: auto;
+  object-fit: contain;
+  pointer-events: none;
+  user-select: none;
+  display: block;
+}
+
+/* hero carousel (replaces floating food images) */
+.hero-carousel {
+  position: absolute;
+  right: 40px;
+  bottom: 40px;
+  z-index: 4;
+  width: 360px;
+  height: 360px;
+}
+
+/* animated hero text */
+.hero-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  color: #fff;
+  z-index: 6;
+}
+
+.hero-caption {
+  font-family: "Island Moments", cursive;
+  font-size: 4.4rem;
+  font-weight: 700;
+  color: transparent;
+  background: linear-gradient(90deg, #ffffff, rgba(212,175,55,0.98) 60%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  letter-spacing: 1px;
+  margin: 0;
+  transform: translateY(18px) scale(0.98);
+  opacity: 0;
+  text-shadow: 0 10px 30px rgba(0,0,0,0.6), 0 2px 6px rgba(212,175,55,0.08);
+  transition: transform 700ms cubic-bezier(.2,.9,.2,1), opacity 500ms ease;
+}
+
+.hero-subline {
+  font-family: Georgia, serif;
+  color: rgba(255,255,255,0.95);
+  margin: 0;
+  font-size: 1.05rem;
+  opacity: 0.95;
+  letter-spacing: 0.2px;
+  margin-top: 10px;
+  max-width: 880px;
+  text-align: center;
+  line-height: 1.65;
+  padding: 0 18px;
+}
+
+.caption-animate .hero-caption {
+  transform: translateY(0) scale(1);
+  opacity: 1;
+}
+
+/* underline animation */
+.caption-underline {
+  display: block;
+  width: 0;
+  height: 6px;
+  background: linear-gradient(90deg, rgba(212,175,55,1), rgba(212,175,55,0.6));
+  border-radius: 6px;
+  margin: 10px auto 0;
+  box-shadow: 0 8px 24px rgba(212,175,55,0.12);
+  transition: width 700ms cubic-bezier(.2,.9,.2,1);
+}
+
+.caption-animate .caption-underline {
+  width: 140px;
+}
+
+@media (max-width: 1024px) {
+  .hero-caption { font-size: 3.2rem; }
+  .caption-underline { width: 110px; }
+}
+
+@media (max-width: 768px) {
+  .hero-caption { font-size: 2.2rem; }
+  .hero-subline { font-size: 0.95rem; }
+  .caption-underline { width: 90px; }
+}
+
+@media (max-width: 768px) {
+  .hero-carousel { display: none; }
+  .hero-caption { font-size: 2rem; }
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .header {
+    padding: 20px 40px;
+  }
+
+  .navigation {
+    gap: 30px;
+  }
+
+  .central-logo-circle {
+    width: 250px;
+    height: 250px;
+  }
+
+  .food-image img {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+@media (max-width: 768px) {
+  /* keep header compact and inline on hero page (logo left, hamburger right) */
+  .header {
+    padding: 15px 20px;
+    flex-direction: row; /* keep in a single row */
+    gap: 0;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .navigation {
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .nav-link {
+    font-size: 12px;
+  }
+
+  /* hide large central logo on small screens so it doesn't push header */
+  .central-logo,
+  .central-logo-circle {
+    display: none;
+  }
+
+  .food-image {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-container {
+    height: 100vh;
+  }
+
+  .header {
+    padding: 10px 15px;
+  }
+
+  .logo-title {
+    font-size: 14px;
+  }
+
+  .navigation {
+    gap: 15px;
+  }
+
+  .central-logo-circle {
+    width: 180px;
+    height: 180px;
+  }
+
+  .central-title {
+    font-size: 18px;
+    letter-spacing: 2px;
+  }
+}
