@@ -2,7 +2,7 @@ import { useState } from "react";
 import "./Footer.css";
 
 const Footer = ({
-  backgroundImage = "/restaurent/assets/pictures/newsletter.png",
+  backgroundImage = "/assets/pictures/newsletter.png",
 }) => {
   const [email, setEmail] = useState("");
   const [newsletterEmail, setNewsletterEmail] = useState("");
@@ -61,7 +61,7 @@ const Footer = ({
           <div className="footer-left">
             <div className="footer-logo">
               <img
-                src="/restaurent/assets/logo.png"
+                src="/assets/logo.png"
                 alt="Restaurant Logo"
                 style={{ width: "120px", height: "120px" }}
               />

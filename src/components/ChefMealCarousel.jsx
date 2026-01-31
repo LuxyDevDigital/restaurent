@@ -3,9 +3,9 @@ import "./ChefMealCarousel.css";
 
 export default function ChefMealCarousel({
   images = [
-    "/restaurent/assets/pictures/1.jpg",
-    "/restaurent/assets/pictures/2.jpg",
-    "/restaurent/assets/pictures/3.jpg",
+    "/assets/pictures/1.jpg",
+    "/assets/pictures/2.jpg",
+    "/assets/pictures/3.jpg",
   ],
   captions = [],
   interval = 3000,

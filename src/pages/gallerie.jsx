@@ -14,62 +14,62 @@ export default function RestaurantGallerie() {
   const galleryImages = [
     {
       id: 1,
-      src: "/restaurent/assets/pictures/gallerie/1.jpg",
+      src: "/assets/pictures/gallerie/1.jpg",
       alt: "Restaurant Interior",
     },
     {
       id: 2,
-      src: "/restaurent/assets/pictures/gallerie/2.jpg",
+      src: "/assets/pictures/gallerie/2.jpg",
       alt: "Elegant Dining Room",
     },
     {
       id: 3,
-      src: "/restaurent/assets/pictures/gallerie/3.jpg",
+      src: "/assets/pictures/gallerie/3.jpg",
       alt: "Gourmet Food Presentation",
     },
     {
       id: 4,
-      src: "/restaurent/assets/pictures/gallerie/4.jpg",
+      src: "/assets/pictures/gallerie/4.jpg",
       alt: "Menu Design",
     },
     {
       id: 5,
-      src: "/restaurent/assets/pictures/gallerie/5.jpg",
+      src: "/assets/pictures/gallerie/5.jpg",
       alt: "Chef Cooking",
     },
     {
       id: 6,
-      src: "/restaurent/assets/pictures/gallerie/6.jpg",
+      src: "/assets/pictures/gallerie/6.jpg",
       alt: "Wine Service",
     },
     {
       id: 7,
-      src: "/restaurent/assets/pictures/gallerie/7.jpg",
+      src: "/assets/pictures/gallerie/7.jpg",
       alt: "Pasta Dish",
     },
     {
       id: 8,
-      src: "/restaurent/assets/pictures/gallerie/8.jpg",
+      src: "/assets/pictures/gallerie/8.jpg",
       alt: "Restaurant Terrace",
     },
     {
       id: 9,
-      src: "/restaurent/assets/pictures/gallerie/9.jpg",
+      src: "/assets/pictures/gallerie/9.jpg",
       alt: "Chocolate Dessert",
     },
     {
       id: 10,
-      src: "/restaurent/assets/pictures/gallerie/10.jpeg",
+      src: "/assets/pictures/gallerie/10.jpeg",
       alt: "Restaurant Bar",
     },
     {
       id: 11,
-      src: "/restaurent/assets/pictures/gallerie/11.jpg",
+      src: "/assets/pictures/gallerie/11.jpg",
       alt: "Fresh Pizza",
     },
     {
       id: 12,
-      src: "/restaurent/assets/pictures/gallerie/12.jpg",
+      src: "/assets/pictures/gallerie/12.jpg",
       alt: "Table Setting",
     },
   ];
@@ -172,7 +172,7 @@ export default function RestaurantGallerie() {
         {/* Hero Section */}
         <div className="hero-section">
           <img
-            src="/restaurent/assets/g.png"
+            src="/assets/g.png"
             alt="Restaurant Interior Hero"
             className="hero-image"
           />
@@ -210,7 +210,7 @@ export default function RestaurantGallerie() {
 
         {/* Footer Section */}
             <img
-            src="/restaurent/assets/g2.jpg"
+            src="/assets/g2.jpg"
             alt="Restaurant Interior Hero"
             className="footer-image"
           />

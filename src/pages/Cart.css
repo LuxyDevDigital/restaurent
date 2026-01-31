@@ -12,7 +12,7 @@
   content: "";
   position: absolute;
   inset: 0;
-  background: url('/restaurent/assets/pictures/bg3.jpg') center / cover no-repeat fixed;
+  background: url('/assets/pictures/bg3.jpg') center / cover no-repeat fixed;
   filter: blur(4px) brightness(0.62);
   transform: scale(1.02);
   z-index: 0;

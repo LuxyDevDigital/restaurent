@@ -9,7 +9,7 @@ export default function RestaurantMenu() {
   const [selectedItem, setSelectedItem] = useState({
     name: "HAMBURGER",
     price: "60 MAD",
-    image: "/restaurent/assets/pictures/1b.png",
+    image: "/assets/pictures/1b.png",
     description:
       "Un incontournable qui traverse les générations. Notre Cheeseburger est composé d'un steak haché de bœuf 100 % pur, grillé à la perfection, surmonté d'une tranche de fromage cheddar fondant qui recouvre délicieusement la viande.",
   });
@@ -62,20 +62,20 @@ export default function RestaurantMenu() {
         {
           name: "HAMBURGER",
           price: "60 MAD",
-          image: "/restaurent/assets/pictures/1b.png",
+          image: "/assets/pictures/1b.png",
           description:
             "Un incontournable qui traverse les générations. Notre Cheeseburger est composé d'un steak haché de bœuf 100 % pur, grillé à la perfection, surmonté d'une tranche de fromage cheddar fondant qui recouvre délicieusement la viande.",
         },
       ],
       gallery: [
-        { name: "Cheeseburger", image: "/restaurent/assets/pictures/3b.png" },
+        { name: "Cheeseburger", image: "/assets/pictures/3b.png" },
         {
           name: "Double Cheeseburger",
-          image: "/restaurent/assets/pictures/1b.png",
+          image: "/assets/pictures/1b.png",
         },
-        { name: "Mini Burger", image: "/restaurent/assets/pictures/2b.png" },
-        { name: "BBQ Burger", image: "/restaurent/assets/pictures/4b.png" },
-        { name: "Fish Burger", image: "/restaurent/assets/pictures/5b.png" },
+        { name: "Mini Burger", image: "/assets/pictures/2b.png" },
+        { name: "BBQ Burger", image: "/assets/pictures/4b.png" },
+        { name: "Fish Burger", image: "/assets/pictures/5b.png" },
       ],
     },
     pates: {
@@ -83,7 +83,7 @@ export default function RestaurantMenu() {
         {
           name: "SPAGHETTI CARBONARA",
           price: "45 MAD",
-          image: "/restaurent/assets/pictures/5pa.png",
+          image: "/assets/pictures/5pa.png",
           description:
             "Des spaghettis crémeux avec des lardons, des œufs frais et du parmesan. Un classique italien préparé selon la tradition.",
         },
@@ -91,16 +91,16 @@ export default function RestaurantMenu() {
       gallery: [
         {
           name: "Spaghetti Carbonara",
-          image: "/restaurent/assets/pictures/5pa.png",
+          image: "/assets/pictures/5pa.png",
         },
         {
           name: "Penne Arrabbiata",
-          image: "/restaurent/assets/pictures/7pa.png",
+          image: "/assets/pictures/7pa.png",
         },
-        { name: "Lasagne", image: "/restaurent/assets/pictures/3pa.png" },
+        { name: "Lasagne", image: "/assets/pictures/3pa.png" },
         {
           name: "Fettuccine Alfredo",
-          image: "/restaurent/assets/pictures/2pa.png",
+          image: "/assets/pictures/2pa.png",
         },
       ],
     },
@@ -109,7 +109,7 @@ export default function RestaurantMenu() {
         {
           name: "PIZZA MARGHERITA",
           price: "55 MAD",
-          image: "/restaurent/assets/pictures/1p.png",
+          image: "/assets/pictures/1p.png",
           description:
             "La pizza classique avec sauce tomate, mozzarella fraîche et basilic. Simple et délicieuse, comme en Italie.",
         },
@@ -117,19 +117,19 @@ export default function RestaurantMenu() {
       gallery: [
         {
           name: "Pizza Margherita",
-          image: "/restaurent/assets/pictures/1p.png",
+          image: "/assets/pictures/1p.png",
         },
         {
           name: "Pizza Pepperoni",
-          image: "/restaurent/assets/pictures/2p.png",
+          image: "/assets/pictures/2p.png",
         },
         {
           name: "Pizza Quatre Saisons",
-          image: "/restaurent/assets/pictures/5p.png",
+          image: "/assets/pictures/5p.png",
         },
         {
           name: "Pizza Végétarienne",
-          image: "/restaurent/assets/pictures/4p.png",
+          image: "/assets/pictures/4p.png",
         },
       ],
     },
@@ -138,21 +138,21 @@ export default function RestaurantMenu() {
         {
           name: "JUS D'ORANGE FRAIS",
           price: "25 MAD",
-          image: "/restaurent/assets/pictures/1j.png",
+          image: "/assets/pictures/1j.png",
           description:
             "Jus d'orange fraîchement pressé, riche en vitamine C. Parfait pour accompagner votre repas.",
         },
       ],
       gallery: [
-        { name: "Jus d'Orange", image: "/restaurent/assets/pictures/5j.png" },
-        { name: "Jus d'ananas", image: "/restaurent/assets/pictures/1j.png" },
-        { name: "Eau Minérale", image: "/restaurent/assets/pictures/4j.png" },
-        { name: "Jus de citron", image: "/restaurent/assets/pictures/6j.png" },
+        { name: "Jus d'Orange", image: "/assets/pictures/5j.png" },
+        { name: "Jus d'ananas", image: "/assets/pictures/1j.png" },
+        { name: "Eau Minérale", image: "/assets/pictures/4j.png" },
+        { name: "Jus de citron", image: "/assets/pictures/6j.png" },
         {
           name: "jus de passtique",
-          image: "/restaurent/assets/pictures/3j.png",
+          image: "/assets/pictures/3j.png",
         },
-        { name: "Jus de limon", image: "/restaurent/assets/pictures/2j.png" },
+        { name: "Jus de limon", image: "/assets/pictures/2j.png" },
       ],
     },
     sandwich: {
@@ -160,20 +160,20 @@ export default function RestaurantMenu() {
         {
           name: "SANDWICH MIXTE",
           price: "35 MAD",
-          image: "/restaurent/assets/pictures/s1.png",
+          image: "/assets/pictures/s1.png",
           description:
             "Sandwich généreux garni de viande, légumes frais et sauce maison, servi chaud et croustillant.",
         },
       ],
       gallery: [
-        { name: "Sandwich Mixte", image: "/restaurent/assets/pictures/s1.png" },
-        { name: "Club Sandwich", image: "/restaurent/assets/pictures/2s.png" },
+        { name: "Sandwich Mixte", image: "/assets/pictures/s1.png" },
+        { name: "Club Sandwich", image: "/assets/pictures/2s.png" },
         {
           name: "croissant sandwich",
-          image: "/restaurent/assets/pictures/3s.png",
+          image: "/assets/pictures/3s.png",
         },
-        { name: "sandwich meal", image: "/restaurent/assets/pictures/4s.png" },
-        { name: "Panini", image: "/restaurent/assets/pictures/5s.png" },
+        { name: "sandwich meal", image: "/assets/pictures/4s.png" },
+        { name: "Panini", image: "/assets/pictures/5s.png" },
       ],
     },
     coffee: {
@@ -181,19 +181,19 @@ export default function RestaurantMenu() {
         {
           name: "ESPRESSO",
           price: "18 MAD",
-          image: "/restaurent/assets/pictures/1co.png",
+          image: "/assets/pictures/1co.png",
           description:
             "Café espresso torréfié sur place, arôme intense et crémeux.",
         },
       ],
       gallery: [
-        { name: "Latte", image: "/restaurent/assets/pictures/5co.png" },
-        { name: "Cappuccino", image: "/restaurent/assets/pictures/1co.png" },
+        { name: "Latte", image: "/assets/pictures/5co.png" },
+        { name: "Cappuccino", image: "/assets/pictures/1co.png" },
         {
           name: "haute chocolate ",
-          image: "/restaurent/assets/pictures/3co.png",
+          image: "/assets/pictures/3co.png",
         },
-        { name: "Latte", image: "/restaurent/assets/pictures/4co.png" },
+        { name: "Latte", image: "/assets/pictures/4co.png" },
       ],
     },
     dessert: {
@@ -201,25 +201,25 @@ export default function RestaurantMenu() {
         {
           name: "CHEESECAKE",
           price: "30 MAD",
-          image: "/restaurent/assets/pictures/4c.png",
+          image: "/assets/pictures/4c.png",
           description: "Cheesecake onctueux aux fruits rouges, préparé maison.",
         },
       ],
       gallery: [
-        { name: "Cheesecake", image: "/restaurent/assets/pictures/4c.png" },
+        { name: "Cheesecake", image: "/assets/pictures/4c.png" },
         {
           name: "Pancakes",
           image:
-            "/restaurent/assets/pictures/These_Are_The_BEST_Pancakes_In_America-removebg-preview.png",
+            "/assets/pictures/These_Are_The_BEST_Pancakes_In_America-removebg-preview.png",
         },
         {
           name: "Chocolate Tirami su",
-          image: "/restaurent/assets/pictures/3c.png",
+          image: "/assets/pictures/3c.png",
         },
-        { name: "chocolate cake", image: "/restaurent/assets/pictures/1c.png" },
+        { name: "chocolate cake", image: "/assets/pictures/1c.png" },
         {
           name: "dessert frambois",
-          image: "/restaurent/assets/pictures/2c.png",
+          image: "/assets/pictures/2c.png",
         },
       ],
     },
@@ -255,7 +255,7 @@ export default function RestaurantMenu() {
                   onClick={() => handleCategoryClick("hamburger")}
                 >
                   <img
-                    src="/restaurent/assets/pictures/1b.png"
+                    src="/assets/pictures/1b.png"
                     alt="Hamburger"
                   />
                   <p>hamburger</p>
@@ -267,7 +267,7 @@ export default function RestaurantMenu() {
                   }`}
                   onClick={() => handleCategoryClick("pates")}
                 >
-                  <img src="/restaurent/assets/pictures/2pa.png" alt="Pates" />
+                  <img src="/assets/pictures/2pa.png" alt="Pates" />
                   <p>pates</p>
                 </div>
 
@@ -277,7 +277,7 @@ export default function RestaurantMenu() {
                   }`}
                   onClick={() => handleCategoryClick("pizza")}
                 >
-                  <img src="/restaurent/assets/pictures/3p.png" alt="Pizza" />
+                  <img src="/assets/pictures/3p.png" alt="Pizza" />
                   <p>pizza</p>
                 </div>
 
@@ -287,7 +287,7 @@ export default function RestaurantMenu() {
                   }`}
                   onClick={() => handleCategoryClick("drinks")}
                 >
-                  <img src="/restaurent/assets/pictures/5j.png" alt="Drinks" />
+                  <img src="/assets/pictures/5j.png" alt="Drinks" />
                   <p>drinks</p>
                 </div>
 
@@ -298,7 +298,7 @@ export default function RestaurantMenu() {
                   onClick={() => handleCategoryClick("sandwich")}
                 >
                   <img
-                    src="/restaurent/assets/pictures/s1.png"
+                    src="/assets/pictures/s1.png"
                     alt="Sandwich"
                   />
                   <p>sandwich</p>
@@ -310,7 +310,7 @@ export default function RestaurantMenu() {
                   }`}
                   onClick={() => handleCategoryClick("coffee")}
                 >
-                  <img src="/restaurent/assets/pictures/1co.png" alt="Coffee" />
+                  <img src="/assets/pictures/1co.png" alt="Coffee" />
                   <p>coffee</p>
                 </div>
 
@@ -320,7 +320,7 @@ export default function RestaurantMenu() {
                   }`}
                   onClick={() => handleCategoryClick("dessert")}
                 >
-                  <img src="/restaurent/assets/pictures/4c.png" alt="Dessert" />
+                  <img src="/assets/pictures/4c.png" alt="Dessert" />
                   <p>dessert</p>
                 </div>
               </div>
@@ -342,7 +342,7 @@ export default function RestaurantMenu() {
                 }`}
                 onClick={() => handleCategoryClick("hamburger")}
               >
-                <img src="/restaurent/assets/pictures/1b.png" alt="Hamburger" />
+                <img src="/assets/pictures/1b.png" alt="Hamburger" />
                 <span>hamburger</span>
               </button>
 
@@ -352,7 +352,7 @@ export default function RestaurantMenu() {
                 }`}
                 onClick={() => handleCategoryClick("pates")}
               >
-                <img src="/restaurent/assets/pictures/2pa.png" alt="Pates" />
+                <img src="/assets/pictures/2pa.png" alt="Pates" />
                 <span>pates</span>
               </button>
 
@@ -362,7 +362,7 @@ export default function RestaurantMenu() {
                 }`}
                 onClick={() => handleCategoryClick("pizza")}
               >
-                <img src="/restaurent/assets/pictures/3p.png" alt="Pizza" />
+                <img src="/assets/pictures/3p.png" alt="Pizza" />
                 <span>pizza</span>
               </button>
 
@@ -372,7 +372,7 @@ export default function RestaurantMenu() {
                 }`}
                 onClick={() => handleCategoryClick("drinks")}
               >
-                <img src="/restaurent/assets/pictures/5j.png" alt="Drinks" />
+                <img src="/assets/pictures/5j.png" alt="Drinks" />
                 <span>drinks</span>
               </button>
 
@@ -382,7 +382,7 @@ export default function RestaurantMenu() {
                 }`}
                 onClick={() => handleCategoryClick("sandwich")}
               >
-                <img src="/restaurent/assets/pictures/s1.png" alt="Sandwich" />
+                <img src="/assets/pictures/s1.png" alt="Sandwich" />
                 <span>sandwich</span>
               </button>
 
@@ -392,7 +392,7 @@ export default function RestaurantMenu() {
                 }`}
                 onClick={() => handleCategoryClick("coffee")}
               >
-                <img src="/restaurent/assets/pictures/1co.png" alt="Coffee" />
+                <img src="/assets/pictures/1co.png" alt="Coffee" />
                 <span>coffee</span>
               </button>
 
@@ -402,7 +402,7 @@ export default function RestaurantMenu() {
                 }`}
                 onClick={() => handleCategoryClick("dessert")}
               >
-                <img src="/restaurent/assets/pictures/4c.png" alt="Dessert" />
+                <img src="/assets/pictures/4c.png" alt="Dessert" />
                 <span>dessert</span>
               </button>
             </div>

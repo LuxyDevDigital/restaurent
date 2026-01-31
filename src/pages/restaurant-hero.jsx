@@ -36,9 +36,9 @@ function HeroTextAnimated() {
       <div style={{ display: "none" }}>
         <ChefMealCarousel
           images={[
-            "/restaurent/assets/pictures/r4.png",
-            "/restaurent/assets/pictures/r3.png",
-            "/restaurent/assets/pictures/r5.png",
+            "/assets/pictures/r4.png",
+            "/assets/pictures/r3.png",
+            "/assets/pictures/r5.png",
           ]}
           captions={captions}
           interval={3000}
@@ -79,9 +79,9 @@ const RestaurantHero = () => {
       <div className="hero-carousel">
         <ChefMealCarousel
           images={[
-            "/restaurent/assets/pictures/r4.png",
-            "/restaurent/assets/pictures/r3.png",
-            "/restaurent/assets/pictures/r5.png",
+            "/assets/pictures/r4.png",
+            "/assets/pictures/r3.png",
+            "/assets/pictures/r5.png",
           ]}
           interval={7000}
           pauseOnHover={false}

@@ -2,7 +2,7 @@
   position: relative;
   /* width: 100%; */
   height: 100vh;
-  background: url("/restaurent/assets/background.jpg") center / cover;
+  background: url("/assets/background.jpg") center / cover;
   display: flex;
   flex-direction: column;
   overflow: hidden;

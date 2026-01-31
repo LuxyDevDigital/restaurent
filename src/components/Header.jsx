@@ -30,24 +30,24 @@ const Header = () => {
       {/* LOGO */}
       <div className="logo-container">
         <div className="logo-icon">
-          <img src="/restaurent/assets/logo.png" alt="Restaurant Logo" />
+          <img src="/assets/logo.png" alt="Restaurant Logo" />
         </div>
       </div>
 
       {/* DESKTOP NAV */}
       <nav className="navigation">
         <NavLink to="/restaurent" end className="nav-link">HOME</NavLink>
-        <NavLink to="/restaurent/menu" className="nav-link">MENU</NavLink>
-        <NavLink to="/restaurent/gallerie" className="nav-link">GALLERIE</NavLink>
-        <NavLink to="/restaurent/aboutus" className="nav-link">ABOUT US</NavLink>
+        <NavLink to="/menu" className="nav-link">MENU</NavLink>
+        <NavLink to="/gallerie" className="nav-link">GALLERIE</NavLink>
+        <NavLink to="/aboutus" className="nav-link">ABOUT US</NavLink>
       </nav>
 
       {/* DESKTOP ICONS */}
       <div className="header-icons">
-        <NavLink to="/restaurent/cart">
+        <NavLink to="/cart">
           <ShoppingCart color="white" size={26} />
         </NavLink>
-        <NavLink to="/restaurent/reservation" className="reservation-link">
+        <NavLink to="/reservation" className="reservation-link">
           <button className="reservation-button">Reservation</button>
         </NavLink>
       </div>
@@ -71,11 +71,11 @@ const Header = () => {
           onClick={(e) => e.stopPropagation()}
         >
           <NavLink to="/restaurent" onClick={() => setMenuOpen(false)} className="mobile-link">HOME</NavLink>
-          <NavLink to="/restaurent/menu" onClick={() => setMenuOpen(false)} className="mobile-link">MENU</NavLink>
-          <NavLink to="/restaurent/gallerie" onClick={() => setMenuOpen(false)} className="mobile-link">GALLERIE</NavLink>
-          <NavLink to="/restaurent/aboutus" onClick={() => setMenuOpen(false)} className="mobile-link">ABOUT US</NavLink>
-          <NavLink to="/restaurent/cart" onClick={() => setMenuOpen(false)} className="mobile-link">CART</NavLink>
-          <NavLink to="/restaurent/reservation" onClick={() => setMenuOpen(false)} className="mobile-link">RESERVATION</NavLink>
+          <NavLink to="/menu" onClick={() => setMenuOpen(false)} className="mobile-link">MENU</NavLink>
+          <NavLink to="/gallerie" onClick={() => setMenuOpen(false)} className="mobile-link">GALLERIE</NavLink>
+          <NavLink to="/aboutus" onClick={() => setMenuOpen(false)} className="mobile-link">ABOUT US</NavLink>
+          <NavLink to="/cart" onClick={() => setMenuOpen(false)} className="mobile-link">CART</NavLink>
+          <NavLink to="/reservation" onClick={() => setMenuOpen(false)} className="mobile-link">RESERVATION</NavLink>
         </nav>
       </div>
     </header>

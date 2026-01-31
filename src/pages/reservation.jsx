@@ -40,21 +40,21 @@ const Reservation = () => {
             <div className="reservation-images">
               <div className="image-container large">
                 <img
-                  src="/restaurent/assets/pictures/reservation1.png"
+                  src="/assets/pictures/reservation1.png"
                   alt="Elegant dining table with wine glasses and candles"
                   className="reservation-image"
                 />
               </div>
               <div className="image-container medium">
                 <img
-                  src="/restaurent/assets/pictures/reservation2.png"
+                  src="/assets/pictures/reservation2.png"
                   alt="Cozy restaurant interior with warm lighting"
                   className="reservation-image"
                 />
               </div>
               <div className="image-container medium">
                 <img
-                  src="/restaurent/assets/pictures/reservation3.png"
+                  src="/assets/pictures/reservation3.png"
                   alt="Romantic dinner setting with wine and food"
                   className="reservation-image"
                 />

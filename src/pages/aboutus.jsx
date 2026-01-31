@@ -2,7 +2,7 @@ import "./aboutus.css";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 const AboutUs = ({
-  backgroundImage = "/restaurent/assets/pictures/background.jpg",
+  backgroundImage = "/assets/pictures/background.jpg",
 }) => {
   const aboutStyle = {
     backgroundImage: `linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)), url(${backgroundImage})`,
@@ -39,7 +39,7 @@ const AboutUs = ({
                   playsInline
                 >
 
-                  <source src="/restaurent/assets/L.mp4" type="video/mp4" />
+                  <source src="/assets/L.mp4" type="video/mp4" />
 
                 </video>
               </div>

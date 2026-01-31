@@ -6,9 +6,9 @@ import Header from "../components/Header"
 
 export default function Cart() {
   const [cartItems, setCartItems] = useState([
-    { id: 1, name: "Burger Deluxe", price: 60.0, quantity: 2, image: "/restaurent/assets/pictures/1b.png" },
-    { id: 2, name: "Pizza Margherita", price: 55.0, quantity: 1, image: "/restaurent/assets/pictures/1p.png" },
-    { id: 3, name: "Salade Verte", price: 45.0, quantity: 3, image: "/restaurent/assets/pictures/5pa.png" },
+    { id: 1, name: "Burger Deluxe", price: 60.0, quantity: 2, image: "/assets/pictures/1b.png" },
+    { id: 2, name: "Pizza Margherita", price: 55.0, quantity: 1, image: "/assets/pictures/1p.png" },
+    { id: 3, name: "Salade Verte", price: 45.0, quantity: 3, image: "/assets/pictures/5pa.png" },
   ])
 
   const updateQuantity = (id, newQuantity) => {

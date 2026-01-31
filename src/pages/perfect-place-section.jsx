@@ -8,7 +8,7 @@ const PerfectPlaceSection = () => {
       subtitle: "Fresh starters to begin your dining experience",
       price: "$15",
       unit: "per person",
-      img: "/restaurent/assets/c1.jpg",
+      img: "/assets/c1.jpg",
       alt: "Delicious appetizers",
       className: "appetizers-card",
     },
@@ -17,7 +17,7 @@ const PerfectPlaceSection = () => {
       subtitle: "Canonical classics to obscure the drinks",
       price: "$120",
       unit: "per person",
-      img: "/restaurent/assets/pictures/coktailBackground.png",
+      img: "/assets/pictures/coktailBackground.png",
       alt: "Gourmet main courses",
       className: "main-courses-card",
     },
@@ -26,7 +26,7 @@ const PerfectPlaceSection = () => {
       subtitle: "Fresh catch prepared with traditional recipes",
       price: "$45",
       unit: "per person",
-      img: "/restaurent/assets/pictures/seafood.jpg",
+      img: "/assets/pictures/seafood.jpg",
       alt: "Fresh seafood dishes",
       className: "seafood-card",
     },
@@ -35,7 +35,7 @@ const PerfectPlaceSection = () => {
       subtitle: "Refreshing drinks and premium selections",
       price: "$12",
       unit: "per person",
-      img: "/restaurent/assets/pictures/beverages.jpg",
+      img: "/assets/pictures/beverages.jpg",
       alt: "Assorted beverages",
       className: "beverages-card",
     },
@@ -88,7 +88,7 @@ const PerfectPlaceSection = () => {
           <div className="images-container-p">
             <img
               className="image-container-p"
-              src="/restaurent/assets/p-place.png"
+              src="/assets/p-place.png"
               alt="Chef working in kitchen"
             />
 

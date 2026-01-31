@@ -44,9 +44,9 @@ export default function WhyChooseUsSection() {
       text: "A good restaurant is like a vacation; it transports you, and it becomes a lot more than just about the food. All great deeds and all great thoughts",
       name: "Bratlee Hamint",
       images: [
-        "/restaurent/assets/banner1.png",
-        "/restaurent/assets/banner2.png",
-        "/restaurent/assets/banner3.png",
+        "/assets/banner1.png",
+        "/assets/banner2.png",
+        "/assets/banner3.png",
       ],
       imageIndex: 0,
     },
