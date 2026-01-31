@@ -36,7 +36,7 @@ const Header = () => {
 
       {/* DESKTOP NAV */}
       <nav className="navigation">
-        <NavLink to="/restaurent" end className="nav-link">HOME</NavLink>
+        <NavLink to="/" end className="nav-link">HOME</NavLink>
         <NavLink to="/menu" className="nav-link">MENU</NavLink>
         <NavLink to="/gallerie" className="nav-link">GALLERIE</NavLink>
         <NavLink to="/aboutus" className="nav-link">ABOUT US</NavLink>
