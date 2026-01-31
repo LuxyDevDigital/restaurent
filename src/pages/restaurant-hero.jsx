@@ -64,7 +64,7 @@ const RestaurantHero = () => {
       <div className="hero-video" aria-hidden={!isPlaying}>
         <img
           className="hero-chef-image"
-          src="restaurent/assets/pictures/bg3.jpg"
+          src="/assets/pictures/bg3.jpg"
           alt="Chef at work"
         />
         <div className="video-overlay" />

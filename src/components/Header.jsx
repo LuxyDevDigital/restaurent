@@ -70,7 +70,7 @@ const Header = () => {
           className="mobile-nav"
           onClick={(e) => e.stopPropagation()}
         >
-          <NavLink to="/restaurent" onClick={() => setMenuOpen(false)} className="mobile-link">HOME</NavLink>
+          <NavLink to="/" onClick={() => setMenuOpen(false)} className="mobile-link">HOME</NavLink>
           <NavLink to="/menu" onClick={() => setMenuOpen(false)} className="mobile-link">MENU</NavLink>
           <NavLink to="/gallerie" onClick={() => setMenuOpen(false)} className="mobile-link">GALLERIE</NavLink>
           <NavLink to="/aboutus" onClick={() => setMenuOpen(false)} className="mobile-link">ABOUT US</NavLink>
