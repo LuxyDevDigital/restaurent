@@ -32,8 +32,17 @@
   display: flex;
   justify-content: center;
 }
+
+.images-container-p {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .image-container-p {
-  max-width: 75%;
+  max-width: 100%;
+  width: min(100%, 520px);
   height: auto;
 }
 
@@ -258,7 +267,10 @@
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.45);
   cursor: pointer;
-  transition: transform 0.25s ease, background 0.25s ease, opacity 0.25s ease;
+  transition:
+    transform 0.25s ease,
+    background 0.25s ease,
+    opacity 0.25s ease;
   opacity: 0.9;
 }
 
@@ -276,36 +288,27 @@
   }
 
   .perfect-place-title {
-    font-size: 2.5rem;
+    font-size: clamp(2rem, 7vw, 2.8rem);
     margin-bottom: 60px;
   }
 
   .content-row {
-    flex-direction: column;
-    gap: 40px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 28px;
     margin-bottom: 60px;
   }
 
   .content-text {
+    flex: 1 1 320px;
     padding-left: 0;
   }
 
-  /* Center image on small screens */
-  .images-container-p {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    margin-bottom: 8px;
-  }
-
+  .images-container-p,
   .image-container-p {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    object-fit: cover;
-    display: block;
-    margin: 0 auto;
+    display: none !important;
   }
 
   .promo-cards {
@@ -372,5 +375,30 @@
     left: 24px;
     width: 70px;
     height: 70px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .perfect-place-section .images-container-p {
+    display: none !important;
+  }
+
+  .perfect-place-section .content-text {
+    flex: 1 1 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .content-row {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .content-text {
+    flex: 1 1 auto;
+  }
+
+  .images-container-p {
+    display: none;
   }
 }

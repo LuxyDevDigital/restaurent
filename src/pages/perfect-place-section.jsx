@@ -42,16 +42,21 @@ const PerfectPlaceSection = () => {
   ];
 
   const [activeIndex, setActiveIndex] = useState(0);
+  const [showPerfectPlaceImage, setShowPerfectPlaceImage] = useState(() =>
+    typeof window !== "undefined" ? window.innerWidth > 768 : true,
+  );
 
   // Responsive items per slide: 1 on mobile (<=768px), 2 on desktop
   const [itemsPerSlide, setItemsPerSlide] = useState(() =>
-    typeof window !== "undefined" && window.innerWidth <= 768 ? 1 : 2
+    typeof window !== "undefined" && window.innerWidth <= 768 ? 1 : 2,
   );
 
   useEffect(() => {
     const handleResize = () => {
       setItemsPerSlide(window.innerWidth <= 768 ? 1 : 2);
+      setShowPerfectPlaceImage(window.innerWidth > 768);
     };
+    handleResize();
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
   }, []);
@@ -85,15 +90,15 @@ const PerfectPlaceSection = () => {
         {/* Content Row */}
         <div className="content-row">
           {/* Left Side - Images */}
-          <div className="images-container-p">
-            <img
-              className="image-container-p"
-              src="/assets/p-place.png"
-              alt="Chef working in kitchen"
-            />
-
-
-          </div>
+          {showPerfectPlaceImage && (
+            <div className="images-container-p">
+              <img
+                className="image-container-p"
+                src="/assets/p-place.png"
+                alt="Chef working in kitchen"
+              />
+            </div>
+          )}
 
           {/* Right Side - Text and Features */}
           <div className="content-text">
